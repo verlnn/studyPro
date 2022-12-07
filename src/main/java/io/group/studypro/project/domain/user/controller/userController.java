@@ -12,7 +12,7 @@ public class userController {
 
     @GetMapping("/main")
     public String mainView () {
-        return "../static/"
+        return "../static/";
     }
 
 
