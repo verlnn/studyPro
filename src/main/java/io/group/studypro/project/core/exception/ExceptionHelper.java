@@ -59,7 +59,6 @@ public class ExceptionHelper {
                     .exception(className.substring(className.lastIndexOf(".") + 1))
                     .code(errorType.getCode())
                     .message(errorType.getMessage())
-                    .title(errorType.getTitle())
                     .status(errorType.getStatus().value())
                     .error(errorType.getStatus().getReasonPhrase())
                     .build();

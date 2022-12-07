@@ -10,13 +10,13 @@ mybatis:
   configuration:
     map-underscore-to-camel-case: true
 
-#spring:
+spring:
 #  datasource:
 #    driver-class-name: org.postgresql.Driver
 #    url: jdbc:postgresql://211.104.145.129:45432/wm_db
 #    username: wm_db_user
 #    password: alstnelql20!
-#  thymeleaf:
-#    prefix: classpath:static/
-#    suffix: .html
-#    cache: false
+  thymeleaf:
+    prefix: classpath:static/
+    suffix: .html
+    cache: false
