@@ -1,7 +1,7 @@
 package io.group.studypro.project.core.config;
 
 import com.google.gson.Gson;
-import io.group.studypro.project.domain.user.dto.UserDTO;
+import io.group.studypro.project.domain.user.dto.UserInfo;
 import org.springframework.context.annotation.Configuration;
 
 import javax.servlet.http.HttpServletRequest;
@@ -12,9 +12,9 @@ import java.io.InputStreamReader;
 @Configuration
 public class TransferJson {
 
-    public UserDTO processedFromJson (HttpServletRequest request) throws IOException {
+    public UserInfo processedFromJson (HttpServletRequest request) throws IOException {
         String data = jsonProcessedToStr(request);
-        UserDTO save = new Gson().fromJson(data, UserDTO.class);
+        UserInfo save = new Gson().fromJson(data, UserInfo.class);
         return save;
     }
 
