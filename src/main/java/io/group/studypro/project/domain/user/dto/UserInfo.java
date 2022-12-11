@@ -21,4 +21,5 @@ public class UserInfo {
 
     private Boolean checkId;
     private Boolean matchInfo;
+
 }
